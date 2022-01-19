@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Validate Field 2</title>
+        <script src="./script2.js"></script>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <form onsubmit="return false">
+            <h1>Product Details</h1>
+            <table>
+                <tr>
+                    <td>Category:</td>
+                    <td><select id="select" onchange="productlist()">
+                        <option >Electronics</option>
+                        <option >Grocery</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Product:</td>
+                    <td id="list"><select name="" id=""><option id="opt" value="">------------</option></select></td>
+                </tr>
+                <tr>
+                    <td>Quantity:</td>
+                    <td><input name="inp" id="quantity" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Total Price:</td>
+                    <td><input name="inp" type="text" id="price"></td>
+                </tr>
+                <tr>
+                    <td><button onclick="calculatePrice()">Submit</button></td>
+                    <td><button onclick="Clear()">Clear</button></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Working wih window object
+    </title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+   
+    <form onsubmit="return false">
+        <table>
+            <tr>
+                <td colspan="4"><b>Create a new Window</b></td>
+            </tr>
+            <tr>
+                <td colspan="4" style="font-size: medium;">Window Size</td>
+            </tr>
+            <tr>
+                <td>Width:</td>
+                <td><input type="text" id="width"></td>
+                <td>Height:</td>
+                <td><input type="text" id="height"></td>
+            </tr>
+            <tr>
+                <td colspan="4">POSITION</td>
+            </tr>
+            <tr>
+                <td>Left:</td>
+                <td><input type="text" id="left"></td>
+                <td>Top:</td>
+                <td><input type="text" id="top"></td>
+            </tr>
+            <tr>
+                <td colspan="3"><button id="btn" onclick="newWindow()">New Window</button></td>
+                <td><button onclick="reset()">Reset</button></td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+
+</html>

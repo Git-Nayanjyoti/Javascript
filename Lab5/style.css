@@ -1,0 +1,9 @@
+table{
+    text-align: center;
+    border: 1px solid blue;
+    border-spacing: px;
+    padding: 5px;
+}
+td{
+    border: 1px solid blue;
+}

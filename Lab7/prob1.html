@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Form Validation
+    </title>
+    <script src="./script1.js"></script>
+</head>
+
+<body>
+    <p><b>Enter Loan Information:</b></p>
+    <form onsubmit="return false">
+        <table>
+            <tr>
+                <td>1)Amount of the load (any currency):</td>
+                <td><input id="amount" type="number" required oninput="validateAmount()"></td>
+            </tr>
+            <tr>
+                <td>2)Annual percentage rate of interest:</td>
+                <td><input id="interest" type="number" required></td>
+            </tr>
+            <tr>
+                <td>3)Repayment period in years:</td>
+                <td><input id="period" type="number" required oninput="validatePeriod()"></td>
+            </tr>
+        </table>
+        <button onclick="calculatePayment()">Compute</button>
+        <table>
+            <tr>
+                <td>4)Your monthly payment will be:</td>
+                <td id="monthly" style="border: 1px solid; width: 160px;"></td>
+            </tr>
+            <tr>
+                <td>5)Your total payment will be:</td>
+                <td id="totalPay" style="border: 1px solid;"></td>
+            </tr>
+            <tr>
+                <td>6)Your total interest payments will be:</td>
+                <td id="totalInterestPay" style="border: 1px solid;"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

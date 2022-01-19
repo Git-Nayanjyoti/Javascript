@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Embedding Script tag in HTML Document
+        </title>
+        <script>
+            let headVar = 10;
+            document.write("Value stored in variable headVar is " + headVar);
+        </script>
+        <hr>
+    </head>
+    <body>
+        
+        <script>
+            let bodyVar = 65;
+            document.write("Value stored in variable bodyVar is " + bodyVar);
+        </script>
+        <hr>
+        <script src="./common.js" onload="addNos(headVar,bodyVar)">
+        </script>
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(82, 105, 240);
+}
+table{
+    border: 12px solid white;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    text-align: center;
+    color: white;
+}

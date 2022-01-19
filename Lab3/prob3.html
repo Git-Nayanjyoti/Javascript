@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            String Object
+        </title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td><code>String is</code></td>
+                <td><code>:</code></td>
+                <td><code id="str1"></code></td>
+            </tr>
+            <tr>
+                <td><code>Result of str.match('Capgemini')</code></td>
+                <td><code>:</code></td>
+                <td><code id="match"></code></td>
+            </tr>
+            <tr>
+                <td><code>Result of str.substr(3,6)</code></td>
+                <td><code>:</code></td>
+                <td><code id="subStr"></code></td>
+            </tr>
+            <tr>
+                <td><code id="lower"></code></td>
+            </tr>
+            <tr>
+                <td><code id="upper"></code></td>
+            </tr>
+        </table>
+        <script>
+            let str1 = "University at Capgemini";
+            let match = str1.toString().match("Capgemini");
+            let subStr = str1.substr(3,6);
+            let str2 = "Hello JavaScripters!";
+            let lower = str2.toString().toLowerCase();
+            let upper = str2.toString().toUpperCase();
+
+            document.getElementById("str1").innerHTML = str1;
+            document.getElementById("match").innerHTML = match;
+            document.getElementById("subStr").innerHTML = subStr;
+            document.getElementById("lower").innerHTML = lower;
+            document.getElementById("upper").innerHTML = upper;
+        </script>
+    </body>
+</html>

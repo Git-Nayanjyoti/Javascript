@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Working with Predefined core objects
+        </title>
+    </head>
+    <body>
+        <script>
+            const date = new Date();
+            const hours = date.getHours();
+            document.write(date);
+            if(hours < 12){
+                document.write("<br>Good Morning");
+            }else if(hours >= 12 && hours <= 17){
+                document.write("<br>Good Afternoon");
+            }else if(hours > 17){
+                document.write("<br>Good Evening");
+            }
+        </script>
+    </body>
+</html>

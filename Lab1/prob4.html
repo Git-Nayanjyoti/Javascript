@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Embedding Script tag in HTML Document
+    </title>
+    <script>
+        document.write("This text is displayed from the script tag embedded in the Head tag of the document");
+    </script>
+</head>
+
+<body>
+    <hr>
+    <script>
+        document.write("This text is displayed from the script tag embedded in the body tag of the document");
+    </script>
+    <hr>
+    <p><code>The actual script is in external script file called "Hello.js"</code></p>
+
+    <script src="./Hello.js" onload="dispHello()"></script>
+    <hr>
+    <script>
+        var str = dispHello();
+        document.write("This text is displayed by Calling eternal function : " + str);
+    </script>
+
+    <hr>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Compound Interest
+    </title>
+</head>
+
+<body>
+    <style>
+        hr {
+            border-top: 1px dashed;
+            width: 34%;
+            margin-left: 0;
+        }
+
+        td {
+            padding-right: 40px;
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+
+        body {
+            border: 1px solid;
+
+        }
+    </style>
+    <hr>
+    <p>*****Calculate Compount Interest*****</p>
+    <hr>
+
+    <table>
+        <tr>
+            <td><code>Principal</code></td>
+            <td><code>-</code></td>
+            <td><code>1000 rs</code></td>
+        </tr>
+        <tr>
+            <td><code>Rate of Interest</code></td>
+            <td><code>-</code></td>
+            <td><code>10%</code></td>
+        </tr>
+        <tr>
+            <td><code>Period</code></td>
+            <td><code>-</code></td>
+            <td><code>1 yr</code></td>
+        </tr>
+        <tr>
+            <td><code>comp Interest</code></td>
+            <td><code>-</code></td>
+            <td><code id="CI"></code></td>
+        </tr>
+    </table>
+
+    <script>
+        let p = 1000;
+        let r = 10;
+        let n = 1;
+        var CI = (p * (Math.pow((1 + (r / 100)), n))) - p;
+        document.getElementById("CI").innerHTML = CI;
+
+
+    </script>
+</body>
+
+</html>

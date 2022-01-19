@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        String Object
+    </title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td><code>The actual string is</code></td>
+            <td><code>-</code></td>
+            <td><code id="str"></code></td>
+        </tr>
+        <tr>
+            <td><code>The character to be searched for is</code></td>
+            <td><code>-</code></td>
+            <td style="border: 1px solid;" onclick="getChar()"><code id="searchChar">click here</code></td>
+
+        </tr>
+        <tr>
+            <td><code>The character is found at the index</code></td>
+            <td><code>-</code></td>
+            <td><code id="index"></code></td>
+        </tr>
+    </table>
+    <script>
+        var str = "Capgemini";
+        function getChar() {
+            var char = prompt("Enter the character to be searched for in Capgemini");
+            if (char != null) {
+                var index = str.toString().indexOf(char);
+            }
+            document.getElementById("searchChar").innerHTML = char;
+            document.getElementById("index").innerHTML = index;
+        }
+        document.getElementById("str").innerHTML = str;
+    </script>
+</body>
+
+</html>
